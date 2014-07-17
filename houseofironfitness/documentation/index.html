@@ -1,0 +1,308 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>GYM Guide Landing Page - Documentation</title>
+        <meta name="description" content="Thank you for purchasing my theme">
+        <meta name="author" content="mustachethemes">
+        <meta name="copyright" content="mustachethemes">     
+        <link rel="stylesheet" href="css/documenter_style.css" media="all">
+        <script src="js/jquery.1.6.4.js"></script>
+        <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script src="js/jquery.easing.js"></script>
+        <link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+        <script src="js/shCore.js"></script>
+        <script src="js/shBrushXml.js"></script>
+        <script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+        <script>document.createElement('section');var duration=500,easing='swing';</script>
+        <script src="js/script.js"></script>
+    <style>
+    html {
+        background-color:#E6E6E6;
+        color:#383838;
+    }
+            ::-moz-selection {
+    background:#333636;
+    color:#00DFFC;
+    }
+    ::selection {
+        background:#333636;
+        color:#00DFFC;
+    }
+    #documenter_sidebar #documenter_logo {
+        background-image:url();
+    }
+    a {
+        color:#008C9E;
+    }
+	img {
+    	margin: 10px 0 20px 0;
+        max-width: 700px;
+    }
+    hr {
+        border-top:1px solid #D4D4D4;
+        border-bottom:1px solid #FFFFFF;
+    }
+    #documenter_sidebar, #documenter_sidebar ol a {
+        background-color:#1c93c5;
+        color:#FFFFFF;
+    }
+    #documenter_sidebar ol a {
+        -webkit-text-shadow:1px 1px 0px #494F4F;
+        -moz-text-shadow:1px 1px 0px #494F4F;
+        text-shadow:1px 1px 0px #494F4F;
+    }
+    #documenter_sidebar ol {
+        border-top:1px solid #055e83;
+    }
+    #documenter_sidebar ol a {
+        border-top:1px solid #055e83;
+        border-bottom:1px solid #055e83;
+        color:#FFFFFF;
+    }
+    #documenter_sidebar ol a:hover {
+        background:#0b75a2;
+        color:#fff;
+        border-top:1px solid #055e83;
+    }
+    #documenter_sidebar ol a.current {
+        background:#0b75a2;
+        color:#fff;
+        border-top:1px solid #055e83;
+    }
+    #documenter_copyright {
+        display:block !important;
+        visibility:visible !important;
+    }
+    </style>
+</head>
+
+<body>
+<div id="documenter_sidebar"> <a href="#documenter_cover" id="documenter_logo"></a>
+  <ol id="documenter_nav">
+    <li><a class="current" href="#documenter_cover">Start</a></li>
+    <li><a href="#tips">General Tips</a></li>
+    <li><a href="#installation">Template Installation</a></li>    
+    <li><a href="#html_structure">HTML Structure</a></li>
+    <li><a href="#css_files_and_structure">CSS Files and Structure</a></li>
+    <li><a href="#javascript_files">Javascript Files</a></li>
+    <li><a href="#edition">Template Edition</a></li>
+    <li><a href="#more-templates">More Templates</a></li>    
+    <li><a href="#credits">Credits</a></li> 
+    <li><a href="#help">Need Help?</a></li> 
+  </ol>
+  <div id="documenter_copyright">Copyright mustachethemes</div>
+</div>
+
+<div id="documenter_content">
+  <section id="documenter_cover">
+    <h1>GYM Guide Landing Page</h1>
+    <h2>Documentation</h2>
+    <hr>
+    <ul>
+      <li>Created: 15 June 14</li>
+      <li>Last Update: 25 June 14</li>
+      <li>By: mustachethemes</li>
+      <li>
+      <a href="http://themeforest.net/user/mustachethemes">themeforest.net/user/mustachethemes</a></li>
+    </ul>
+    <img src="https://0.s3.envato.com/files/94593062/00_Preview.__large_preview.jpg" alt="preview">
+    <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here or to my support forum at <a href="http://support.mustachethemes.com/">http://support.mustachethemes.com</a></p>
+  </section>
+  
+  
+  <section id="tips">
+    <h3>TIPS</h3>
+    <hr class="notop">
+    <p>USE FIREBUG or Chrome DEVELOPER TOOLS!</p>
+    <p> I am not going to tell you about when i discovered this great tool, or&nbsp;necessarily why i like it and so on.&nbsp;I&#39;m actually going to push you into using it :) I mean it, you can&#39;t be a serious developer unless you&#39;re using it.</p>
+    <p>Scenarios:</p>
+    <ul>
+      <li> You want to change the size/color/etc of a certain font and search into 3 stylesheets with 1000 lines each and you can find that damn rule which contains the property</li>
+      <li> You want to get rid of an ugly space somewhere</li>
+      <li> Some block has some absolute position and overlays another block</li>
+      <li> You want to inspect an element to see if it has some sort of margin padding etc.</li>
+      <li> And etc. etc.</li>
+    </ul>
+    <p> Mainly (for me), Firebug is about tracking the css code and to debug a website seeing the actual final (generated code). This tool is about productivity, you want to make things quicker - you should have it; you want to make things better - you should have it; you want to learn more and more - YOU SHOULD HAVE IT.</p>
+    
+    <p> Now, <strong>Firebug</strong> is made for <strong>Mozilla Firefox</strong>, you can find it <a href="https://addons.mozilla.org/ro/firefox/addon/firebug/" rel="nofollow" target="_blank">here</a></p>
+    <p> For those of you who are using different browsers you already have some builtin tools:&nbsp;<a href="http://blog.chromium.org/2009/06/developer-tools-for-google-chrome.html" target="_blank">Chrome</a>&nbsp;/&nbsp;<a href="http://developer.apple.com/technologies/safari/developer-tools.html" rel="nofollow" target="_blank">Safari</a>&nbsp;/&nbsp;<a href="http://dev.opera.com/tools/" rel="nofollow" target="_blank">Opera</a>/<a href="http://www.microsoft.com/download/en/details.aspx?id=18359" rel="nofollow" target="_blank">Internet Explorer</a></p>
+    <p> Instead of making huge tutorials about Firebug here, i will point you some great links so you can easily learn it:</p>
+    <ul>
+      <li> <a href="http://www.youtube.com/watch?v=FsX6qwQqGgQ" rel="nofollow" target="_blank">Introduction to CSS editing using Firebug</a></li>
+      <li> <a href="http://www.youtube.com/watch?v=sHbYpl1XFiM&amp;feature=related" rel="nofollow" target="_blank">Firebug tutorial - Inspect HTML and CSS</a></li>
+      <li> <a href="http://net.tutsplus.com/tutorials/other/10-reasons-why-you-should-be-using-firebug/" rel="nofollow" target="_blank">10 Reasons Why You Should Be Using Firebug</a></li>
+    </ul>
+    <p>Please ENJOY!</p>
+  </section>
+  
+  <section id="installation">
+    <h3>Template Installation</h3>
+    <hr class="notop">
+    <p> You can view this template in any web browser from your desktop computer. Because the files are written in HTML, you do not need an internet connection in order to display or edit the template.</p>
+    <p>All of the HTML files are given a descriptive name to make it easier to distingish what each file will display.</p>
+    <h4>Upload to The Server</h4>
+    
+    <ol>
+        <li>It's important to understand that you must either have your own server space or use someone elses. The server space can be purchased at many different places around the internet. You need somewhere to put the files that you purchased so others can find them online.</li>
+        <li>Select /html folder and then choose the layout you want. After you choose, there will have several files with the extension labeled .html. This is where all your content will. In addition to .html you should see a file labeled .css. .css files are going to be the files that will tell the .html how to to be styled. CSS is simply a way to take text, images, and other elements and change the look of them. It's very important to keep the .css file with the HTML or the HTML will not look how the design is meant to look. Along with the HTML and CSS files, you will also have three additional folders to upload; css, images, and js.</li>
+        <li>Start your FTP client (I persoanlly use <a href="https://filezilla-project.org/" target="_blank">Filezilla</a> which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</li>
+        <p><img src="images/filezilla.jpg" alt="Filezilla preview image"></p>
+        <li>Locate the domain folder you wish to upload your template files to on your server. You are going to want to click and drag every file that you have labeled .html, .css, .js into your FTP client.</li>
+        <p><img src="images/filezilla-example.jpg" alt="Filezilla preview image"></p>
+        <li>Once the files are done uploading, you can try access your website via browser.</li>
+    </ol>
+  </section>
+  
+  
+  
+  
+  <section id="html_structure">
+    <h3>HTML Structure</h3>
+    <hr class="notop">
+    <div> In this template I used as a framework: BOOTSTRAP Framework. You can take a look <a href="http://getbootstrap.com/">here </a> and see it´s awesome feature in action</div>
+    <div> I mostly kept the generic styles, resets &amp; grid.&nbsp;</div>
+    <div> So as a short description, the grid is composed by 12 columns, named like &quot;col-*-1&quot;, &quot;col-*-2&quot;, &quot;col-*-3&quot;....&quot;col-*-12&quot;. The col div&#39;s should be placed in rows and the rows in a container.</div>
+    <div> A basic layout of the grids look like:</div>
+    <pre class="brush: html">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-*-5&quot;&gt; 5 Columns &lt;/div&gt;
+        &lt;div class=&quot;col-*-3&quot;&gt; 3 Columns &lt;/div&gt;
+        &lt;div class=&quot;col-*-4&quot;&gt; 4 Columns &lt;/div&gt;
+        &lt;div class=&quot;col-*-12&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-*-6&quot;&gt; 6 columns  &lt;/div&gt;
+            &lt;div class=&quot;col-*-6&quot;&gt; 6 columns  &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+ 	<img src="images/html.png">
+	</section>
+  
+  
+  <section id="css_files_and_structure">
+    <h3>CSS Files and Structure</h3>
+    <hr class="notop">
+    <div> I am using several CSS files in this template</div>
+    <p class="info"> As you can see , there are several css files used by the template.</p>
+    <img src="images/css.png" alt="css">
+  </section>
+  
+  
+  
+  <section id="javascript_files">
+    <h3>Javascript Files</h3>
+    <hr class="notop">
+    <img src="images/javascript.png" alt="js">
+  </section>
+  
+  
+  
+  <section id="edition">
+        <h3>Template Edition</h3>
+        <hr class="notop">
+        <p>To edit the images please open them in Photoshop.</p>   
+  </section>
+     
+    
+
+
+  <section id="more-templates">
+    <h3>See our Public Collections on Themeforest</h3>
+    <hr class="notop">
+    <a href="http://themeforest.net/collections/3847685-resume-cv-premium-templates" target="_blank"><img src="http://1.s3.envato.com/files/72295971/resume_collection.jpg" alt="resume"></a>
+    <a href="http://themeforest.net/collections/3847740-church-and-religion-templates" target="_blank"><img src="http://0.s3.envato.com/files/72297572/booksmark_religion_church.jpg" alt=""></a> 
+    <a href="http://themeforest.net/collections/3847716-marketing-landing-page-template" target="_blank"><img src="http://0.s3.envato.com/files/72296839/booksmark_marketing_landing_page.jpg" alt=""></a> 
+    <a href="http://themeforest.net/collections/3847664-automotive-car-dealer" target="_blank"><img src="http://2.s3.envato.com/files/72296114/automotive_car_dealer.jpg" alt=""></a>    
+    <br>
+<div class="clear"></div>    
+    <h3>See All our Items on Themeforest</h3>
+    <hr class="notop">
+    <ul class="templates-list">
+        <li><a href="http://themeforest.net/item/skyfall-tventertainment-book-store-landing-page/7574404" target="_blank">Skyfall Tv-Entertainment Book Store Landing Page</a></li>     
+        <li><a href="http://themeforest.net/item/highway-creative-multipurpose-facebook-templat/7467995" target="_blank">Highway - Creative & Multipurpose Facebook Template</a></li>      
+        <li><a href="http://themeforest.net/item/condo-real-estate-landing-page-for-unbounce/7280593" target="_blank">Condo Real Estate - Landing Page for Unbounce</a></li>    
+        <li><a href="http://themeforest.net/item/made-one-page-portfolio-fullscreen/7132465" target="_blank">MADE - One Page Portfolio - Fullscreen</a></li>
+        <li><a href="http://themeforest.net/item/highway-creative-multipurpose-template-/7021581" target="_blank">Highway - Creative & Multipurpose Template</a></li>
+        <li><a href="http://themeforest.net/item/manhattan-education-unbounce-template/6967451" target="_blank">Manhattan Education Unbounce Template</a></li>
+        <li><a href="http://themeforest.net/item/air-creative-unique-portfolio-theme/6823354" target="_blank">Air - Creative Unique Portfolio Theme</a></li>
+       <li><a href="http://themeforest.net/item/romanova-web-hosting-company-responsive-template/6540093" target="_blank">Romanova - Web Hosting Company Responsive Template</a></li>
+        <li><a href="http://themeforest.net/item/constructors-architects-engineers-html-theme/6434502" target="_blank">Constructors - Architects & Engineers HTML Theme</a></li>
+        <li><a href="http://themeforest.net/item/valencia-creative-flat-ios7-inspired-template/6363937" target="_blank">Valencia - Creative Flat iOS7 Inspired Template</a></li>
+        <li><a href="http://themeforest.net/item/sugar-responsive-minimal-creative-template/6278555" target="_blank">Sugar - Responsive Minimal Creative Template</a></li>
+        <li><a href="http://themeforest.net/item/ice-create-responsive-one-page-html-template/6191926" target="_blank">ICE Create - Responsive One Page HTML Template</a></li>
+        <li><a href="http://themeforest.net/item/petshop-responsive-pet-friendly-theme/6136242" target="_blank">Petshop - Responsive Pet Friendly Theme</a></li>
+        <li><a href="http://themeforest.net/item/dynamo-rentsellbuy-car-dealer-html-responsive/6078163" target="_blank">Dynamo - Rent-Sell-Buy Car Dealer HTML Responsive</a></li>    
+        <li><a href="http://themeforest.net/item/my-landert-app-responsive-landing-page/5980373" target="_blank">My Landert - App Responsive Landing Page </a></li>  
+        <li><a href="http://themeforest.net/item/my-landert-app-responsive-landing-page/5980373" target="_blank">My Landert - App Responsive Landing Page </a></li>   
+        <li><a href="http://themeforest.net/item/vineyard-church-one-page-responsive-religious/5899311" target="_blank">Vineyard Church - One Page Responsive Religious </a></li>
+        <li><a href="http://themeforest.net/item/lead-me-converting-landing-page-template/5442835" target="_blank">Lead Me - Converting Landing Page Template</a></li>
+        <li><a href="http://themeforest.net/item/dynamo-sellbuyrent-cars-online-psd/5375074" target="_blank">Dynamo - Sell/Buy/Rent Cars Online PSD</a></li>
+        <li><a href="http://themeforest.net/item/mustache-professional-vcard-resume-html/4720829" target="_blank">Mustache -Professional vCard Resume HTML</a></li>       
+        <li><a href="http://themeforest.net/item/tiny-resume-responsive-bootstrap-vcard-template/4963341" target="_blank">Tiny Resume - Responsive Bootstrap vCard Template</a></li>
+        <li><a href="http://themeforest.net/item/cooper-vcard-portfolio-metro-html-template/4649632" target="_blank">Cooper - vCard & Portfolio Metro HTML Template</a></li>
+        <li><a href="http://themeforest.net/item/manhattan-university-landing-page/4588611" target="_blank">Manhattan University Landing Page</a></li>
+        <li><a href="http://themeforest.net/item/mozart-creative-responsive-retina-flat-template/5182013" target="_blank">Flat Resume - Virtual Business Card HTML </a></li>
+        <li><a href="http://themeforest.net/item/mustache-professional-vcard-resume-psd/4477341" target="_blank">Mustache -Professional vCard Resume PSD</a></li>
+        <li><a href="http://themeforest.net/item/cooper-multicolor-flat-professional-resume-psd/4384479" target="_blank">Cooper- Multicolor Flat Professional Resume PSD</a></li>
+        <li><a href="http://themeforest.net/item/flat-resume-virtual-business-card-psd/4312291" target="_blank">Flat Resume - Virtual Business Card PSD</a></li>
+        <li><a href="http://themeforest.net/item/tiny-online-professional-resume-psd/4279178" target="_blank">Tiny - Online Professional Resume PSD</a></li>   
+    </ul>
+    <div class="clear"></div>
+    <h3>Visit our Profile on Themeforest</h3>
+    <a href="http://themeforest.net/user/mustachethemes"><img src="http://0.s3.envato.com/files/55003146/590x242.png" alt=""></a>
+  </section>
+
+  
+  <section id="credits">
+    <h3>Credits </h3>
+    <hr class="notop">
+    <p>Images:</p>
+    <ul>
+      <li><a href="https://dribbble.com/shots/1231507-iPhone-5C-Psd-Vector-Mockup" target="_blank">Iphone 5c</a> </li>
+      <li><a href="https://dribbble.com/shots/1321342-Vector-Nexus-10-Mockup-Free-PSD" target="_blank">Nexus 10</a> </li>
+      <li><a href="https://dribbble.com/shots/780376-lumia-920-yellow" target="_blank">Nokia lumia 920</a> </li>
+      <li><a href="https://dribbble.com/shots/1285073-iPad-Air-Psd-Vector-Mockup" target="_blank">Ipad</a> </li>
+    </ul>
+    <p> Code:</p>
+    <ul>
+      <li><a href="http://getbootstrap.com/" target="_blank">Boostrap 3</a> </li>
+      <li><a href="http://jquery.com/" target="_blank">Jquery</a> </li>
+      <li><a href="http://tympanus.net/codrops/" target="_blank">Codrops</a> </li>
+    </ul>
+    <p>Fonts:</p>
+    <ul>
+      <li><a href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans" target="_blank">Google Fonts: Open Sans</a> </li>
+    </ul>
+    <p>Icons:</p>
+    <ul>
+      <li><a href="http://fontello.com/" target="_blank">Font icons from Fontello</a> </li>
+    </ul>    
+  </section>
+
+
+  
+  <section id="help">
+    <h3>Do you need help?</h3>
+    <hr class="notop">
+    <p> Please do not use the comments section or the contact from on Themeforest.</p>
+    <p>We can help you only at our Forum</p>
+    <img src="images/support-notto.jpg" alt="do not do this">
+    <div> Please subscribe to the my support board here <a href="http://support.mustachethemes.com/">http://support.mustachethemes.com/</a> and start a new thread if you need support.</div>
+    <div> Note: I do not offer customizations included in support! Thank you for understanding!</div>
+    <img src="images/forum-support-steps.jpg" alt="Support form steps">
+  </section>
+
+
+  
+</div>
+</body>
+</html>
